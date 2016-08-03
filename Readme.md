@@ -1,7 +1,7 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Анастасия Муйжуле](https://up.htmlacademy.ru/htmlcss/14/user/220374).
-* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/id29644).
+* Наставник: [Ирина Малиновская - Севастополь](https://htmlacademy.ru/profile/id29644).
 
 ---
 
