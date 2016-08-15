@@ -1,22 +1,22 @@
 body {
-    font-size:16px;
-    line-height:22px;
-    color:#283136;
-    font-weight:500;
-    font-family:'Roboto', sans-serif;   
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;   
 }
 h1 {
-    font-size:40px;
-    line-height:auto;
-    color:#000000;
-    font-weight:500;
-    font-family:'Roboto', sans-serif;   
+    font-size: 40px;
+    line-height: auto;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;   
     }
 
 h2 {
-    font-size:18px;
-    line-height:30px;
-    color:#000000;
-    font-weight:500;
-    font-family:'Roboto', sans-serif;   
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;   
 }
