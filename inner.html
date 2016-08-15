@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Home: Nerds</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <div class="container">
                 <div class="index-logo">
-                    <img class="index-logo-img" src="img/" alt="Nerds">
+                    <img class="index-logo-img" src="img/logo.png" width="138" height="55" alt="Nerds">
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-menu">
@@ -29,22 +30,24 @@
                 <div class="user-block">
                     <a class="user-basket" href="#">Корзина</a>
                 </div>
-                <div class="container-title">
-                    <h1 class="title">Добро пожаловать в магазин готовых макетов</h1>
-                </div>
             </div>
         </header>
-        <main class="main">
+        <div class="container-title">
             <div class="container">
-                <div class="sidebar">
+                 <h1 class="title">Добро пожаловать в магазин готовых макетов</h1>
+            </div>         
+        </div>
+        <main class="container">
+            <div class="sidebar">
+                <form>
                     <div class="price">
                         <fieldset>
                             <legend class="subtitle">Стоимость:</legend>
                             <div class="price-range"></div>
                             <div class="price-from">от</div>
-                            <div class="price-first">0</div>
+                            <input type="number" class="price-first" value="0">
                             <div class="price-till">до</div>
-                            <div class="price-last">15000</div>
+                            <input type="number" class="price-last" value="15000">
                         </fieldset>
                     </div>
                     <div class="filter">
@@ -73,105 +76,96 @@
                                 <label for="features-5">Корзина</label>
                         </fieldset>
                     </div>
-                </div>
-                <div class="product-box">
-                    <div class="sort">
-                        <div class="sort-by">
-                            <div class="sort-title">Сортировать:</div>
-                            <ul class="sort-item">
-                                <li class="sort-list">По цене</li>
-                                <li class="sort-list">По типу</li>
-                                <li class="sort-list">По функционалу</li>
-                            </ul>
-                        </div>
-                        <div class="sort-buttons">
-                            <div class="button-down">
-                                <img src="img/" alt="Вниз">
-                            </div>
-                            <div class="button-up">
-                                <img src="img/" alt="Вверх">
-                            </div>
-                        </div>
+                    <div class="show-more">
+                        <a class="show-more-btn" href="#">Показать</a>
                     </div>
-                    <div class="examples">
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                        </div>
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img class="background-active" src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                            <div class="exampeles-open">
-                                <div class="examples-name">Sunset</div>
-                                <p class="examples-text">Интернет-магазин с личным кабинетом</p>
-                                <a class="examples-price" href="#">10000 Р.</a>
-                            </div>
-                        </div>
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                        </div>
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                        </div>
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                        </div>
-                        <div class="examples-item">
-                            <div class="examples-background">
-                                <img src="img/" alt="Фон">
-                            </div>
-                            <div class="examples-image">
-                                <img src="img/" alt="Макет">
-                            </div>
-                        </div>
+                </form>
+            </div>
+            <div class="product-box">
+                <div class="sort">
+                    <div class="sort-by">
+                        <div class="sort-title">Сортировать:</div>
+                        <ul class="sort-item">
+                            <li class="sort-list"><a href="#" class="sort-list-link">По цене</a></li>
+                            <li class="sort-list"><a href="#" class="sort-list-link">По типу</a></li>
+                            <li class="sort-list"><a href="#" class="sort-list-link">По функционалу</a></li>
+                        </ul>
                     </div>
-                    <div class="pagination">
-                        <a class="page-btn" href="#">1</a>
-                        <a class="page-btn" href="#">2</a>
-                        <a class="page-btn" href="#">3</a>
-                        <a class="page-btn" href="#">Следующая</a>
+                    <div class="sort-buttons">
+                        <div class="button-down">
+                        
+                        </div>
+                        <div class="button-up">
+                           
+                        </div>
                     </div>
                 </div>
-                <div class="map-container">
-                    <div class="map">
-                        <iframe src="#"><!--адрес карты на котором будет лого--></iframe>
+                <div class="examples">
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/1.jpg" alt="Макет">
+                        </div>
                     </div>
-                    <div class="contacts">
-                        NЁRDS design studio<br>
-                        <hr>
-                        191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8<br>
-                        <hr>
-                        тел. +7 (812) 275-75-75<br>
-                        <hr>
-                        <a class="contacts-link" href="#">Напишите нам</a>
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/2.jpg" alt="Макет">
+                        </div>
+                        <div class="exampeles-open">
+                            <div class="examples-name">Sunset</div>
+                            <p class="examples-text">Интернет-магазин с личным кабинетом</p>
+                            <a class="examples-price" href="#">10000 Р.</a>
+                        </div>
                     </div>
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/3.jpg" alt="Макет">
+                        </div>
+                    </div>
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/4.jpg" alt="Макет">
+                        </div>
+                    </div>
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/5.jpg" alt="Макет">
+                        </div>
+                    </div>
+                    <div class="examples-item">
+                        <div class="examples-background"></div>
+                        <div class="examples-image">
+                            <img src="catalog/6.jpg" alt="Макет">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a class="page-btn" href="#">1</a>
+                    <a class="page-btn" href="#">2</a>
+                    <a class="page-btn" href="#">3</a>
+                    <a class="page-btn" href="#">Следующая</a>
                 </div>
             </div>
         </main>
+        <div class="map-container">
+            <div class="map">
+                <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVhjeL-z" width="100%" height="300" frameborder="0"></iframe>
+            </div>
+            <div class="contacts">
+                NЁRDS design studio<br>
+                <hr>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8<br>
+                <hr>
+                тел. +7 (812) 275-75-75<br>
+                <hr>
+                <a class="contacts-link" href="#">Напишите нам</a>
+            </div>
+        </div>
         <footer class="main-footer">
             <div class="container">
                 <div class="footer-social">
@@ -186,5 +180,4 @@
             </div>
         </footer>
     </body>
-</html>
-            
+</html>       
