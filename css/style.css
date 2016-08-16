@@ -1,4 +1,6 @@
 body {
+    margin: 0px;
+    padding: 0px;
     font-size: 16px;
     line-height: 22px;
     color: #283136;
@@ -19,4 +21,149 @@ h2 {
     color: #000000;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;   
+}
+.clearfix::after {
+    content: "";
+
+    display: table;
+    clear: both;
+}
+.main-header {
+    background: #eeeeee;
+    padding-top: 27px;
+    padding-bottom: 55px;
+}
+.container {
+    width: 880px;
+    margin: 0 auto;
+        
+}
+.index-logo {
+    float: left;
+}
+.main-navigation {
+    float: left;
+    width: 460px;
+    /* Только для оформления сетки */
+    min-height: 55px;
+}
+.user-block {
+    float: right;
+    width: 100px;
+    /* Только для оформления сетки */
+    min-height: 55px;
+}
+.main-section-slider {
+    float: left;
+    width: 100%;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+    background-color: #eeeeee;
+}
+.main-section-left {
+    float: left;
+    width: 380px;
+}
+.main-section-right {
+    float: right;
+}
+.main-banner {
+    display: none;
+}
+.production-item {
+    float: left;
+    width: 240px;
+    min-height: 45px;
+    margin-right: 80px;
+}
+.production-item:last-child {
+    margin-right: 0;
+}
+.divide {
+    height: 2px;
+    width: 840px;
+    float: left;
+    background: #eeeeee;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.block-description {
+    float: left;
+    width: 620px;
+    min-height: 195px;
+    margin-right: 20px;
+}
+.block-logo {
+    float: right;
+    width: 240px;
+    min-height: 195px;
+}
+.main-services-left {
+    float: left;
+}
+.main-services-right {
+    float: right;
+}
+.company-logo {
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 85px;
+}
+.container-logo {
+    width: 880px;
+    margin: 0 auto;
+    border-top: solid 2px #eeeeee;
+    border-bottom: solid 2px #eeeeee;
+}
+.company-logo-first {
+    width: 240px;
+    float: left;
+    margin-right: 80px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+.company-logo-second {
+    width: 240px;
+    float: left;
+    margin-right: 80px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+.company-logo-third {
+    width: 240px;
+    float: right;
+    margin-right: 0px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+.contacts {
+    padding-top: 30px;
+    padding-bottom: 26px;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 204px;
+}
+.contacts-link {
+    width: 204px;
+}
+.main-footer {
+    float: left;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.footer-social {
+    float: left;
+    width: 240px;
+    min-height: 61px;
+    margin-right: 80px;
+}
+.footer-description {
+    float: left;
+    width: 560px;
+    min-height: 61px;
+}
+.footer-title {
+    margin-top: 0px;
 }
