@@ -9,7 +9,7 @@ body {
 }
 h1 {
     font-size: 40px;
-    line-height: auto;
+    line-height: 40px;
     color: #000000;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;   
@@ -46,6 +46,13 @@ h2 {
     width: 460px;
     /* Только для оформления сетки */
     min-height: 55px;
+}
+.main-navigation-item {
+    display: inline;
+    margin-right: 45px;
+}
+.main-navigation-item:last-child {
+    margin-right: 0px;
 }
 .user-block {
     float: right;
@@ -166,4 +173,116 @@ h2 {
 }
 .footer-title {
     margin-top: 0px;
+}
+.title-wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 80px;
+    padding-bottom: 90px;
+    background-color: #eeeeee;
+}
+.title {
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+.sidebar {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+}
+.product-box {
+    float: right;
+    width: 560px;
+}
+.examples-item {
+    float: left;
+    width: 240px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.examples-item:nth-child(2n+1) {
+    margin-right: 80px;
+}
+fieldset {
+    padding: 0px;
+    border: none;
+}
+.filter-subtitle {
+    margin-bottom: 20px;
+}
+.features-subtitle {
+    margin-bottom: 20px;
+}
+.filter-item {
+    float: left;
+    margin-bottom: 15px;
+}
+.filter-item-name {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.price {
+    margin-bottom: 50px;
+}
+.filter {
+    margin-bottom: 50px;
+}
+.features {
+    margin-bottom: 55px;
+}
+.show-more-btn {
+    width: 155px;
+}
+.sort {
+    width: 560px;
+    float: left;
+}
+.sort-list {
+    display: inline;
+    margin-right: 40px;
+}
+.sort-list:last-child {
+    margin-right: 0px;
+}
+.sort-title {
+    float: left;
+    margin-right: 40px;
+}
+.sort-item {
+    margin-top: 0px;
+}
+.examples-background {
+    float: left;
+    width: 240px;
+    height: 30px;
+    background: url(../img/browser.png) 0 0;
+}
+.exampeles-open {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    width: 140px;
+    height: 135px;
+    background: white;
+    text-align: center;
+}
+.examples-price {
+    width: 140px;
+}
+.pagination {
+    margin-bottom: 80px;
+}
+.page-btn {
+    width: 38px;
+    margin-right: 10px;
+}
+.page-btn-next {
+    width: 140px;
 }
