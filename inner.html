@@ -37,7 +37,7 @@
                  <h1 class="title">Добро пожаловать в магазин готовых макетов</h1>
             </div>         
         </div>
-        <main class="container">
+        <main class="container clearfix">
             <div class="sidebar">
                 <form>
                     <div class="price">
@@ -50,32 +50,28 @@
                             <input type="number" class="price-last" value="15000">
                         </fieldset>
                     </div>
-                    <div class="filter">
-                        <fieldset>
-                            <legend class="filter-subtitle">Сетка:</legend>
-                            <input class="filter-item" type="radio" checked name="radio" id="cat-1"/>
-                                <label class="filter-item-name" for="cat-1">Адаптивная</label>
-                            <input class="filter-item" type="radio" name="radio" id="cat-2"/>
-                                <label class="filter-item-name" for="cat-2">Фиксированная</label>
-                            <input class="filter-item" type="radio" name="radio" id="cat-3"/>
-                                <label class="filter-item-name" for="cat-3">Резиновая</label>
-                        </fieldset>
-                    </div>
-                    <div class="features">
-                        <fieldset>
-                            <legend class="features-subtitle">Особенности:</legend>
-                            <input class="filter-item" type="checkbox" checked id="features-1"/>
-                                <label class="filter-item-name" for="features-1">Слайдер</label>
-                            <input class="filter-item" type="checkbox" id="features-2"/>
-                                <label class="filter-item-name" for="features-2">Блок преимуществ</label>
-                            <input class="filter-item" type="checkbox" checked id="features-3"/>
-                                <label class="filter-item-name" for="features-3">Новости</label>
-                            <input class="filter-item" type="checkbox" id="features-4"/>
-                                <label class="filter-item-name" for="features-4">Галерея</label>
-                            <input class="filter-item" type="checkbox" id="features-5"/>
-                                <label class="filter-item-name" for="features-5">Корзина</label>
-                        </fieldset>
-                    </div>
+                    <fieldset>
+                        <legend class="filter-subtitle">Сетка:</legend>
+                        <input class="filter-item" type="radio" checked name="radio" id="cat-1"/>
+                            <label class="filter-item-name" for="cat-1">Адаптивная</label>
+                        <input class="filter-item" type="radio" name="radio" id="cat-2"/>
+                            <label class="filter-item-name" for="cat-2">Фиксированная</label>
+                        <input class="filter-item" type="radio" name="radio" id="cat-3"/>
+                            <label class="filter-item-name" for="cat-3">Резиновая</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="features-subtitle">Особенности:</legend>
+                        <input class="filter-item" type="checkbox" checked id="features-1"/>
+                            <label class="filter-item-name" for="features-1">Слайдер</label>
+                        <input class="filter-item" type="checkbox" id="features-2"/>
+                            <label class="filter-item-name" for="features-2">Блок преимуществ</label>
+                        <input class="filter-item" type="checkbox" checked id="features-3"/>
+                            <label class="filter-item-name" for="features-3">Новости</label>
+                        <input class="filter-item" type="checkbox" id="features-4"/>
+                            <label class="filter-item-name" for="features-4">Галерея</label>
+                        <input class="filter-item" type="checkbox" id="features-5"/>
+                            <label class="filter-item-name" for="features-5">Корзина</label>
+                    </fieldset>
                     <a class="show-more-btn" href="#">Показать</a>
                 </form>
             </div>
@@ -83,10 +79,10 @@
                 <div class="sort">
                     <div class="sort-by">
                         <div class="sort-title">Сортировать:</div>
-                        <ul class="sort-item">
-                            <li class="sort-list"><a href="#" class="sort-list-link">По цене</a></li>
-                            <li class="sort-list"><a href="#" class="sort-list-link">По типу</a></li>
-                            <li class="sort-list"><a href="#" class="sort-list-link">По функционалу</a></li>
+                        <ul class="sort-list">
+                            <li class="sort-item"><a href="#" class="sort-item-link">По цене</a></li>
+                            <li class="sort-item"><a href="#" class="sort-item-link">По типу</a></li>
+                            <li class="sort-item"><a href="#" class="sort-item-link">По функционалу</a></li>
                         </ul>
                     </div>
                     <div class="sort-buttons">
@@ -98,46 +94,95 @@
                         </div>
                     </div>
                 </div>
-                <div class="examples">
+                <div class="examples-project clearfix">
                     <div class="examples-item">
-                        <div class="examples-background"></div>
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
                         <div class="examples-image">
                             <img src="img/1.jpg" alt="Макет">
                         </div>
+                        <div class="examples-open" style="display:none;">
+                            <div class="examples-name">Aviator</div>
+                            <p class="examples-text">Описание</p>
+                            <a class="examples-price" href="#">Цена</a>
+                        </div>
                     </div>
                     <div class="examples-item">
-                        <div class="examples-background"></div>
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
                         <div class="examples-image">
                             <img src="img/2.jpg" alt="Макет">
                         </div>
-                        <div class="exampeles-open">
+                        <div class="examples-open"  style="display:block;">
                             <div class="examples-name">Sunset</div>
                             <p class="examples-text">Интернет-магазин с личным кабинетом</p>
                             <a class="examples-price" href="#">10000 Р.</a>
                         </div>
                     </div>
                     <div class="examples-item">
-                        <div class="examples-background"></div>
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
                         <div class="examples-image">
                             <img src="img/3.jpg" alt="Макет">
                         </div>
+                        <div class="examples-open" style="display:none;">
+                            <div class="examples-name">Forte</div>
+                            <p class="examples-text">Описание</p>
+                            <a class="examples-price" href="#">Цена</a>
+                        </div>
                     </div>
                     <div class="examples-item">
-                        <div class="examples-background"></div>
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
                         <div class="examples-image">
                             <img src="img/4.jpg" alt="Макет">
                         </div>
-                    </div>
-                    <div class="examples-item">
-                        <div class="examples-background"></div>
-                        <div class="examples-image">
-                            <img src="img/5.jpg" alt="Макет">
+                        <div class="examples-open"  style="display:none;">
+                            <div class="examples-name">Modern organic thai</div>
+                            <p class="examples-text">Описание</p>
+                            <a class="examples-price" href="#">Цена</a>
                         </div>
                     </div>
                     <div class="examples-item">
-                        <div class="examples-background"></div>
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
+                        <div class="examples-image">
+                            <img src="img/5.jpg" alt="Макет">
+                        </div>
+                        <div class="examples-open"  style="display:none;">
+                            <div class="examples-name">Avenue</div>
+                            <p class="examples-text">Описание</p>
+                            <a class="examples-price" href="#">Цена</a>
+                        </div>
+                    </div>
+                    <div class="examples-item">
+                        <div class="examples-background">
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                            <div class="examples-background-dot"></div>
+                        </div>
                         <div class="examples-image">
                             <img src="img/6.jpg" alt="Макет">
+                        </div>
+                        <div class="examples-open"  style="display:none;">
+                            <div class="examples-name">Dovetail</div>
+                            <p class="examples-text">Описание</p>
+                            <a class="examples-price" href="#">Цена</a>
                         </div>
                     </div>
                 </div>

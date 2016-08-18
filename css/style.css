@@ -40,6 +40,8 @@ h2 {
 }
 .index-logo {
     float: left;
+    width: 138px;
+    height: 55px;
 }
 .main-navigation {
     float: left;
@@ -86,17 +88,25 @@ h2 {
 .production-item:last-child {
     margin-right: 0;
 }
-.divide {
-    height: 2px;
-    width: 840px;
+
+.production {
     float: left;
-    background: #eeeeee;
-    margin-top: 80px;
+    width: 880px;
+    border-bottom: solid 2px #eeeeee;
+    padding-bottom: 80px;
     margin-bottom: 60px;
+}
+.about-block-desc {
+    float: left;
+    width: 840px;
+}
+.about-block-list {
+    float: right;
+    width: 840px;
 }
 .block-description {
     float: left;
-    width: 620px;
+    width: 580px;
     min-height: 195px;
     margin-right: 20px;
 }
@@ -107,9 +117,11 @@ h2 {
 }
 .main-services-left {
     float: left;
+    width: 600px;
 }
 .main-services-right {
     float: right;
+    width: 240px;
 }
 .company-logo {
     float: left;
@@ -117,9 +129,7 @@ h2 {
     margin-top: 70px;
     margin-bottom: 85px;
 }
-.container-logo {
-    width: 880px;
-    margin: 0 auto;
+.logo-divider {
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
 }
@@ -167,8 +177,8 @@ h2 {
     margin-right: 80px;
 }
 .footer-description {
-    float: left;
-    width: 560px;
+    float: right;
+    width: 350px;
     min-height: 61px;
 }
 .footer-title {
@@ -216,6 +226,7 @@ fieldset {
 }
 .filter-item {
     float: left;
+    width: 25px;
     margin-bottom: 15px;
 }
 .filter-item-name {
@@ -226,40 +237,53 @@ fieldset {
 .price {
     margin-bottom: 50px;
 }
-.filter {
-    margin-bottom: 50px;
+fieldset:nth-child(2) {
+    margin-bottom: 30px;
 }
-.features {
+fieldset:last-child {
     margin-bottom: 55px;
 }
 .show-more-btn {
+    float: left;
     width: 155px;
+    margin-top: 40px;
 }
 .sort {
     width: 560px;
     float: left;
 }
-.sort-list {
+.sort-item {
     display: inline;
     margin-right: 40px;
 }
-.sort-list:last-child {
+.sort-item:last-child {
     margin-right: 0px;
 }
 .sort-title {
     float: left;
+    width: 90px;
     margin-right: 40px;
 }
-.sort-item {
+.sort-list {
     margin-top: 0px;
 }
 .examples-background {
     float: left;
-    width: 240px;
+    width: 228px;
     height: 30px;
-    background: url(../img/browser.png) 0 0;
+    background: #f1f1f1;
+    padding-left: 12px;
 }
-.exampeles-open {
+.examples-background-dot {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin-right: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.examples-open {
     position: absolute;
     top: 50px;
     left: 20px;
