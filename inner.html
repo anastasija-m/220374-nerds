@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Home: Nerds</title>
+        <title>Catalog: Nerds</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic-ext" rel="stylesheet">
     </head>
@@ -32,24 +32,26 @@
                     <a class="user-block-basket" href="#">Корзина</a>
                 </div>
             </div>
+            <div class="title-wrapper">
+                 <h1 class="title">Добро пожаловать в магазин готовых макетов</h1>         
+            </div>
         </header>
-        <div class="title-wrapper">
-            <div class="container clearfix">
-                 <h1 class="title">Добро пожаловать в магазин готовых макетов</h1>
-            </div>         
-        </div>
         <main class="container clearfix">
             <div class="sidebar">
-                <form>
-                    <div class="price">
-                        <fieldset>
-                            <legend class="price-subtitle">Стоимость:</legend>
-                            <div class="price-range"></div>
-                            <div class="price-from">от</div>
-                            <input type="number" class="price-first" value="0">
-                            <div class="price-till">до</div>
-                            <input type="number" class="price-last" value="15000">
-                        </fieldset>
+                <form action="form.php" method="GET">
+                    <div class="range-filter">
+                        <legend class="filter-subtitle">Стоимость:</legend>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
+                            <label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
+                        </div>
                     </div>
                     <fieldset>
                         <legend class="filter-subtitle">Сетка:</legend>
@@ -61,17 +63,17 @@
                             <label class="filter-item-name" for="cat-3">Резиновая</label>
                     </fieldset>
                     <fieldset>
-                        <legend class="features-subtitle">Особенности:</legend>
+                        <legend class="filter-subtitle">Особенности:</legend>
                         <input class="filter-item" type="checkbox" checked id="features-1"/>
-                            <label class="filter-item-name" for="features-1">Слайдер</label>
+                            <label class="filter-item-name-checkbox" for="features-1">Слайдер</label>
                         <input class="filter-item" type="checkbox" id="features-2"/>
-                            <label class="filter-item-name" for="features-2">Блок преимуществ</label>
+                            <label class="filter-item-name-checkbox" for="features-2">Блок преимуществ</label>
                         <input class="filter-item" type="checkbox" checked id="features-3"/>
-                            <label class="filter-item-name" for="features-3">Новости</label>
+                            <label class="filter-item-name-checkbox" for="features-3">Новости</label>
                         <input class="filter-item" type="checkbox" id="features-4"/>
-                            <label class="filter-item-name" for="features-4">Галерея</label>
+                            <label class="filter-item-name-checkbox" for="features-4">Галерея</label>
                         <input class="filter-item" type="checkbox" id="features-5"/>
-                            <label class="filter-item-name" for="features-5">Корзина</label>
+                            <label class="filter-item-name-checkbox" for="features-5">Корзина</label>
                     </fieldset>
                     <button class="show-more-btn">Показать</button>
                 </form>
@@ -87,7 +89,7 @@
                         </ul>
                     </div>
                     <div class="sort-buttons">
-                        <div class="sort-button-down">
+                        <div class="sort-button-down sort-button-down-active">
                         
                         </div>
                         <div class="sort-button-up">
@@ -100,7 +102,7 @@
                         <div class="examples-image">
                             <img src="img/1.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open" style="display:none;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Aviator</div>
                             <p class="examples-text">Описание</p>
                             <a class="examples-price" href="#">Цена</a>
@@ -110,7 +112,7 @@
                         <div class="examples-image">
                             <img src="img/2.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open"  style="display:block;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Sunset</div>
                             <p class="examples-text">Интернет-магазин с личным кабинетом</p>
                             <a class="examples-price" href="#">10000 Р.</a>
@@ -120,7 +122,7 @@
                         <div class="examples-image">
                             <img src="img/3.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open" style="display:none;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Forte</div>
                             <p class="examples-text">Описание</p>
                             <a class="examples-price" href="#">Цена</a>
@@ -130,7 +132,7 @@
                         <div class="examples-image">
                             <img src="img/4.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open"  style="display:none;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Modern organic thai</div>
                             <p class="examples-text">Описание</p>
                             <a class="examples-price" href="#">Цена</a>
@@ -140,7 +142,7 @@
                         <div class="examples-image">
                             <img src="img/5.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open"  style="display:none;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Avenue</div>
                             <p class="examples-text">Описание</p>
                             <a class="examples-price" href="#">Цена</a>
@@ -150,7 +152,7 @@
                         <div class="examples-image">
                             <img src="img/6.jpg" alt="Макет">
                         </div>
-                        <div class="examples-open"  style="display:none;">
+                        <div class="examples-open non-visable">
                             <div class="examples-name">Dovetail</div>
                             <p class="examples-text">Описание</p>
                             <a class="examples-price" href="#">Цена</a>
@@ -158,7 +160,7 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <a class="page-btn" href="#">1</a>
+                    <a class="page-btn-active" href="#">1</a>
                     <a class="page-btn" href="#">2</a>
                     <a class="page-btn" href="#">3</a>
                     <a class="page-btn-next" href="#">Следующая</a>
@@ -167,17 +169,14 @@
         </main>
         <div class="map-wrapper">
             <div class="map">
-                <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVhjeL-z" width="100%" height="300" frameborder="0"></iframe>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yyxYwGK3rEDN86XBcotZW6GDu_dxjLBE&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
             </div>
             <div class="container">
                 <div class="contacts">
-                    NЁRDS design studio<br>
-                    <br>
-                    191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8<br>
-                    <br>
-                    тел. +7 (812) 275-75-75<br>
-                    <br>
+                    <span class="contacts-company">NЁRDS design studio</span>
+                    <span class="contacts-address">191186, Санкт-Петербург,<br>
+                                                   ул. Б. Конюшенная, д. 19/8</span>
+                    <span class="contacts-phone">тел. +7 (812) 275-75-75</span>
                     <a class="contacts-link" href="#">Напишите нам</a>
                 </div>
             </div>
@@ -185,9 +184,9 @@
         <footer class="main-footer">
             <div class="container clearfix">
                 <div class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn social-btn-vk" href="#"></a>
+                    <a class="social-btn social-btn-fb" href="#"></a>
+                    <a class="social-btn social-btn-inst" href="#"></a>
                 </div>
                 <div class="footer-description">
                     <p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
