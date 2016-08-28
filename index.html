@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Home: Nerds</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic-ext" rel="stylesheet">
     </head>
@@ -14,7 +15,7 @@
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-navigation-menu">
-                        <li class="main-navigation-item">
+                        <li class="main-navigation-item active-page">
                             <a href="#">Студия</a>
                         </li>
                         <li class="main-navigation-item">
@@ -29,9 +30,11 @@
                     </ul>
                 </nav>
                 <div class="user-block">
-                    <a class="user-block-basket" href="#">Корзина</a>
+                    <a href="#" class="user-block-basket">Корзина</a>
                 </div>
             </div>
+        </header>
+        <main>
             <div class="slider">
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
@@ -46,100 +49,94 @@
                         <div class="slide-text">
                             <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
                             <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                            <a href="#" class="btn">Узнать больше</a>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="slide-text">
                             <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
                             <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                            <a href="#" class="btn">Узнать больше</a>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="slide-text">
                             <div class="slide-title">Только наркотики,<br> только хардкор!</div>
                             <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
-                            <a class="btn" href="#">Узнать больше</a>
+                            <a href="#" class="btn">Узнать больше</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main class="container">
-            <div class="production clearfix">
-                <div class="production-item">
-                    <img class="production-img" src="img/category-1.png" alt="">
-                    <h2 class="production-title">Веб-сайты</h2>
-                    <p class="production-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <div class="production-order-1">
-                        <a class="order-btn-1" href="#">Заказать</a>
+            <div class="container">
+                <div class="production clearfix">
+                    <div class="production-item">
+                        <img class="production-img" src="img/category-1.png" alt="">
+                        <h2 class="production-title">Веб-сайты</h2>
+                        <p class="production-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <a href="#" class="order-btn-1">Заказать</a>
+                    </div>
+                    <div class="production-item">
+                        <img class="production-img" src="img/category-2.png" alt="">
+                        <h2 class="production-title">Приложения</h2>
+                        <p class="production-text">Покорите топ-10 приложений в AppStrore и Play!</p>
+                        <a href="#" class="order-btn-2">Заказать</a>
+                    </div>
+                    <div class="production-item">
+                        <img class="production-img" src="img/category-3.png" alt="">
+                        <h2 class="production-title">Презентации</h2>
+                        <p class="production-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <a href="#" class="order-btn-3">Заказать</a>
                     </div>
                 </div>
-                <div class="production-item">
-                    <img class="production-img" src="img/category-2.png" alt="">
-                    <h2 class="production-title">Приложения</h2>
-                    <p class="production-text">Покорите топ-10 приложений в AppStrore и Play!</p>
-                    <div class="production-order-2">
-                        <a class="order-btn-2" href="#">Заказать</a>
+                <div class="about-block clearfix">
+                    <div class="about-block-desc">
+                        <div class="block-description">
+                            <b class="block-description-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                            <p class="block-description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+                        </div>
+                        <div class="block-logo">
+                            <img class="block-logo-img" src="img/logo.png" width="185" height="73" alt="Nerds">
+                            <div class="block-logo-year">SINCE 2004</div>
+                        </div>
+                    </div>
+                    <div class="about-block-list">
+                        <div class="main-services-left">
+                            <p class="services-text">Выполняем заказы на разработку:</p>
+                            <ul class="services-list">
+                                <li class="services-item">Веб-сайтов любой сложности</li>
+                                <li class="services-item">Мобильных приложений для iOS и Android</li>
+                                <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
+                            </ul>
+                        </div>
+                        <div class="main-services-right">
+                            <p class="services-text">Как мы работаем:</p>
+                            <ul class="services-list">
+                                <li class="services-item">С самоотдачей 146%</li>
+                                <li class="services-item">Соблюдая сроки на 100%</li>
+                                <li class="services-item">По предоплате 50%</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="production-item">
-                    <img class="production-img" src="img/category-3.png" alt="">
-                    <h2 class="production-title">Презентации</h2>
-                    <p class="production-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <div class="production-order-3">
-                        <a class="order-btn-3" href="#">Заказать</a>
-                    </div>
-                </div>
-            </div>
-            <div class="about-block clearfix">
-                <div class="about-block-desc">
-                    <div class="block-description">
-                        <p class="block-description-title"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-                        <p class="block-description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-                    </div>
-                    <div class="block-logo">
-                        <img class="block-logo-img" src="img/logo.png" width="185" height="73" alt="Nerds">
-                        <div class="block-logo-year">SINCE 2004</div>
-                    </div>
-                </div>
-                <div class="about-block-list">
-                    <div class="main-services-left">
-                        <p class="services-text">Выполняем заказы на разработку:</p>
-                        <ul class="services-list">
-                            <li class="services-item">Веб-сайтов любой сложности</li>
-                            <li class="services-item">Мобильных приложений для iOS и Android</li>
-                            <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
-                        </ul>
-                    </div>
-                    <div class="main-services-right">
-                        <p class="services-text">Как мы работаем:</p>
-                        <ul class="services-list">
-                            <li class="services-item">С самоотдачей 146%</li>
-                            <li class="services-item">Соблюдая сроки на 100%</li>
-                            <li class="services-item">По предоплате 50%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="company-logo clearfix">
-                <div class="company-logo-item">
-                    <div class="company-logo-first">
-                        <img class="company-logo-img" src="img/logo-glukhanko.png" alt="Glukhanko">
-                    </div>
-                    <div class="company-logo-second">
-                        <img class="company-logo-img" src="img/logo-html.png" alt="html academy">
-                    </div>
-                    <div class="company-logo-third">
-                        <img class="company-logo-img" src="img/logo-barber.png" alt="Barbershop Borodinski">
+                <div class="company-logo">
+                    <div class="company-logo-list clearfix">
+                        <div class="company-logo-item">
+                            <img class="company-logo-img" src="img/logo-glukhanko.png" alt="Glukhanko">
+                        </div>
+                        <div class="company-logo-item">
+                            <img class="company-logo-img" src="img/logo-html.png" alt="html academy">
+                        </div>
+                        <div class="company-logo-item">
+                            <img class="company-logo-img" src="img/logo-barber.png" alt="Barbershop Borodinski">
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <div class="map-wrapper">
             <div class="map">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yyxYwGK3rEDN86XBcotZW6GDu_dxjLBE&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+              <script type="text/javascript" charset="utf-8" async style="width: 100%;" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yyxYwGK3rEDN86XBcotZW6GDu_dxjLBE&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
             </div>
             <div class="container">
                 <div class="contacts">
@@ -147,19 +144,19 @@
                     <span class="contacts-address">191186, Санкт-Петербург,<br>
                                                    ул. Б. Конюшенная, д. 19/8</span>
                     <span class="contacts-phone">тел. +7 (812) 275-75-75</span>
-                    <a class="contacts-link" href="#">Напишите нам</a>
+                    <a href="#" class="contacts-link">Напишите нам</a>
                 </div>
             </div>
         </div>
         <footer class="main-footer">
             <div class="container clearfix">
                 <div class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#"></a>
-                    <a class="social-btn social-btn-fb" href="#"></a>
-                    <a class="social-btn social-btn-inst" href="#"></a>
+                    <a href="#" class="social-btn social-btn-vk"></a>
+                    <a href="#" class="social-btn social-btn-fb"></a>
+                    <a href="#" class="social-btn social-btn-inst"></a>
                 </div>
                 <div class="footer-description">
-                    <p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
+                    <b class="footer-title">Давайте дружить, это выгодно!</b>
                     <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>

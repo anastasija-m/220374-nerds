@@ -77,6 +77,9 @@ h2 {
     color: #000000;
     opacity: 0.4;
 }
+.active-page {
+    border-bottom: 2px solid #fb565a;
+}
 .user-block {
     float: right;
     margin-top: 27px;
@@ -122,35 +125,42 @@ b {
     font-weight: 500;
 }
 .slider {
-    position: relative;
-    width: 880px;
+    background: #eeeeee;
+    width: 100%;
     min-height: 292px;
-    margin: 0 auto;
     overflow: hidden;
-    margin-top: 42px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.slides {
+    width: 880px;
+    margin: 0 auto;
+    position: relative;
 }
 .slide {
+    display:none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 0px;
+    left: 10px;
+    width: 880px;
     height: 310px;
     background-repeat: no-repeat;
     background-position: 100% 10px;
-    -webkit-transition: left 0.3s ease;
-       -moz-transition: left 0.3s ease;
-            transition: left 0.3s ease;
+    -webkit-transition: left 0s ease;
+       -moz-transition: left 0s ease;
+            transition: left 0s ease;
 }
 .slider input[type="radio"] {
     display: none;
 }
 .slider-controls {
     position: absolute;
-    bottom: 65px;
+    bottom: 83px;
     left: 50%;
     z-index: 10;
     width: 100px;
-    margin-left: -50px;
+    margin-left: -60px;
     text-align: center;
 }
 .slider-controls label {
@@ -219,6 +229,7 @@ b {
 }
 #btn-1:checked ~ .slides .slide:nth-child(1) {
     left: 0;
+    display: block;
 }
 #btn-1:checked ~ .slides .slide:nth-child(2),
 #btn-1:checked ~ .slides .slide:nth-child(3) {
@@ -229,6 +240,7 @@ b {
 }
 #btn-2:checked ~ .slides .slide:nth-child(2) {
     left: 0;
+    display: block;
 }
 #btn-2:checked ~ .slides .slide:nth-child(3) {
     left: -880px;
@@ -241,6 +253,7 @@ b {
 }
 #btn-3:checked ~ .slides .slide:nth-child(3) {
     left: 0;
+    display: block;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -258,11 +271,8 @@ b {
     margin-right: 0;
 }
 .production {
-    float: left;
-    width: 880px;
     border-bottom: solid 2px #eeeeee;
     padding-bottom: 80px;
-    margin-bottom: 60px;
 }
 .production-title {
     text-transform: uppercase;
@@ -359,13 +369,16 @@ b {
     -moz-box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.3);
     cursor: pointer;
 }
+.about-block {
+    float:left;
+    width:100%;
+    margin-top: 60px;
+}
 .about-block-desc {
     float: left;
-    width: 880px;
 }
 .about-block-list {
     float: right;
-    width: 880px;
 }
 .block-description {
     float: left;
@@ -374,6 +387,7 @@ b {
     margin-right: 20px;
 }
 .block-description-title {
+    float: left;
     font-size: 36px;
     line-height: 36px;
     font-weight: 500;
@@ -384,20 +398,21 @@ b {
 .block-description-text {
     font-size: 16px;
     line-height: 22px;
-    margin-top: 3px;
+    margin-top: 17px;
     margin-bottom: 10px;
 }
 .block-logo {
     float: right;
     width: 240px;
     min-height: 172px;
+    margin-left: 40px;
 }
 .block-logo-img {
     margin-left: 30px;
 }
 .block-logo-year {
     width: 240px;
-    margin-top: 30px;
+    margin-top: 23px;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -405,17 +420,31 @@ b {
     font-size: 16px;
     background: white;
 }
-.block-logo-year::after {
+.block-logo-year::before {
     content: "";
-    position: relative;
-    top: -12px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
     z-index: 1;
     display: block;
-    border-bottom: 2px solid #eeeeee;
+    width: 65px;
+    height: 2px;
+    background: #eeeeee; 
+}
+.block-logo-year::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    z-index: 1;
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: #eeeeee; 
 }
 .main-services-left {
     float: left;
-    width: 600px;
+    width: 640px;
 }
 .main-services-right {
     float: right;
@@ -451,39 +480,23 @@ b {
     margin-top: 48px;
     margin-bottom: 85px;
 }
-.company-logo-item {
+.company-logo-list {
     float: left;
-    width: 880px;
     border-top: solid 2px #eeeeee;
     border-bottom: solid 2px #eeeeee;
 }
-.company-logo-first {
+.company-logo-item {
     width: 240px;
-    float: left;
-    margin-right: 80px;
+    display: inline-block;
+    margin-right: 75px;
     margin-top: 45px;
     margin-bottom: 25px;
     opacity: 0.2;
 }
-.company-logo-second {
-    width: 240px;
-    float: left;
-    margin-right: 80px;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    opacity: 0.2;
-}
-.company-logo-third {
-    width: 240px;
-    float: right;
+.company-logo-item:last-child {
     margin-right: 0px;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    opacity: 0.2;
 }
-.company-logo-first:hover,
-.company-logo-second:hover,
-.company-logo-third:hover {
+.company-logo-item:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -615,7 +628,7 @@ b {
 .title-wrapper {
     float: left;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
     padding-bottom: 84px;
     background-color: #eeeeee;
 }
@@ -623,10 +636,11 @@ b {
     text-align: center;
     width: 700px;
     margin: 0 auto;
-    padding-top: 64px;
+    padding-top: 44px;
     text-transform: uppercase;
     font-size: 40px;
     line-height: 48px;
+    letter-spacing: -0.2px;
 }
 .sidebar {
     float: left;
@@ -644,7 +658,7 @@ b {
 .examples-text {
     font-size: 14px;
     line-height: 18px;
-    width: 140px;
+    width: 160px;
 }
 .examples-item {
     float: left;
@@ -652,9 +666,13 @@ b {
     margin-bottom: 80px;
     position: relative;
     border-top: solid #f1f1f1 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .examples-item:hover {
     border-top: solid #b6b6b6 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .examples-item:nth-child(2n+1) {
     margin-right: 80px;
@@ -677,7 +695,7 @@ b {
 }
 .range-filter {
     width: 240px;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
 }
 .range-controls {
     position: relative;
@@ -685,7 +703,7 @@ b {
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     border-radius: 5px;
     background: #f1f1f1;
 }
@@ -731,7 +749,7 @@ b {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 6px;
     padding: 8px 10px;
     text-align: center;
     color: #283136;
@@ -746,7 +764,7 @@ fieldset {
     margin-left: 0px;
 }
 .filter-subtitle {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -759,7 +777,7 @@ fieldset {
 .filter-item-name-checkbox {
     display: inline-block;
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     position: relative;
     padding-left: 35px;
     color: #283136;
@@ -829,7 +847,7 @@ input[type=checkbox]:hover:checked + .filter-item-name-checkbox:hover::before {
     cursor: pointer;
  }
 fieldset:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 fieldset:last-child {
     margin-bottom: 55px;
@@ -851,7 +869,7 @@ fieldset:last-child {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 35px;
+    margin-top: 38px;
 }
 .show-more-btn:hover {
     background-color: #e5e5e5;
@@ -867,10 +885,11 @@ fieldset:last-child {
 .sort {
     width: 560px;
     float: left;
+    margin-top: 2px;
 }
 .sort-item {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 41px;
     text-transform: uppercase;
 }
 .sort-item-link {
@@ -898,7 +917,7 @@ fieldset:last-child {
 .sort-title {
     float: left;
     width: 90px;
-    margin-right: 40px;
+    margin-right: 37px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 18px;
@@ -910,6 +929,7 @@ fieldset:last-child {
     margin-top: 0px;
     width: 350px;
     margin-right: 0px;
+    margin-bottom: 15px;
     padding: 0px;
     float: left;
 }
@@ -966,19 +986,17 @@ fieldset:last-child {
     top: 20px;
     left: 20px;
     z-index: 2;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 35px;
     padding-bottom: 30px;
-    width: 140px;
+    width: 160px;
     height: 135px;
     background: white;
     text-align: center;
-}
-.non-visable {
     display: none;
 }
-.examples-item:hover > .non-visable {
+.examples-item:hover > .examples-open {
     display: block;
 }
 .examples-price:link, .examples-price:visited {
@@ -999,6 +1017,7 @@ fieldset:last-child {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 .examples-price:hover {
     background-color: #d6494d;
