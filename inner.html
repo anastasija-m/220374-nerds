@@ -5,20 +5,21 @@
         <title>Catalog: Nerds</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic-ext" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
     <body>
         <header class="main-header">
             <div class="container clearfix">
                 <div class="index-logo">
-                    <a href="#" class="index-logo-img">
+                    <a href="index.html" class="index-logo-img">
                         <img src="img/logo.png" width="138" height="55" alt="Nerds">
                     </a>
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-navigation-menu">
                         <li class="main-navigation-item">
-                            <a href="#">Студия</a>
+                            <a href="index.html">Студия</a>
                         </li>
                         <li class="main-navigation-item">
                             <a href="#">Клиенты</a>
@@ -104,7 +105,7 @@
                     <div class="examples-project clearfix">
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/1.jpg" alt="Макет">
+                                <img src="img/1.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Aviator</div>
@@ -114,7 +115,7 @@
                         </div>
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/2.jpg" alt="Макет">
+                                <img src="img/2.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Sunset</div>
@@ -124,7 +125,7 @@
                         </div>
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/3.jpg" alt="Макет">
+                                <img src="img/3.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Forte</div>
@@ -134,7 +135,7 @@
                         </div>
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/4.jpg" alt="Макет">
+                                <img src="img/4.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Modern Organic THAI</div>
@@ -144,7 +145,7 @@
                         </div>
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/5.jpg" alt="Макет">
+                                <img src="img/5.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Avenue</div>
@@ -154,7 +155,7 @@
                         </div>
                         <div class="examples-item">
                             <div class="examples-image">
-                                <img src="img/6.jpg" alt="Макет">
+                                <img src="img/6.jpg" width="240" height="240" alt="Макет">
                             </div>
                             <div class="examples-open">
                                 <div class="examples-name">Dovetail</div>
@@ -182,8 +183,26 @@
                     <span class="contacts-address">191186, Санкт-Петербург,<br>
                                                    ул. Б. Конюшенная, д. 19/8</span>
                     <span class="contacts-phone">тел. +7 (812) 275-75-75</span>
-                    <a href="#" class="contacts-link">Напишите нам</a>
+                    <a data-popup-open="popup-1" href="#" class="contacts-link">Напишите нам</a>
                 </div>
+            </div>
+            <div class="modal-content" data-popup="popup-1">
+                <button class="modal-content-close" type="button" title="Закрыть" data-popup-close="popup-1"></button>
+                <form class="login-form" action="#" method="post">
+                    <div class="modal-content-input-left">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="modal-content-input-right">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="text" id="email" placeholder="Для отправки ответа">
+                    </div>
+                    <div class="modal-content-input-big">
+                        <label for="message-text">Текст письма:</label>
+                        <textarea  id="message-text" placeholder="В свободной форме"></textarea>
+                    </div>
+                    <input class="send-button" type="button" value="ОТПРАВИТЬ">
+                </form>
             </div>
         </div>
         <footer class="main-footer">
@@ -194,10 +213,26 @@
                     <a href="#" class="social-btn social-btn-inst"></a>
                 </div>
                 <div class="footer-description">
-                    <p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
+                    <b class="footer-title">Давайте дружить, это выгодно!</b>
                     <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>
         </footer>
+        <script>
+             $(function() {
+            //----- OPEN
+            $('[data-popup-open]').on('click', function(e)  {
+                var targeted_popup_class = jQuery(this).attr('data-popup-open');
+                $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+                e.preventDefault();
+            });
+            //----- CLOSE
+            $('[data-popup-close]').on('click', function(e)  {
+                var targeted_popup_class = jQuery(this).attr('data-popup-close');
+                $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+                e.preventDefault();
+            });
+        });
+        </script>
     </body>
 </html>       
