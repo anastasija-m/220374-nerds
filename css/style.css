@@ -5,22 +5,18 @@ body {
     line-height: 22px;
     color: #283136;
     font-weight: 500;
-    font-family: 'Roboto', "Arial", sans-serif;   
+    font-family: "Roboto", "Arial", sans-serif;   
 }
 h1 {
     font-size: 40px;
     line-height: 40px;
-    color: #000000;
-    font-weight: 500;
-    font-family: 'Roboto', 'Arial', sans-serif;   
-    }
+    color: #000000;  
+}
 
 h2 {
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
-    font-weight: 500;
-    font-family: 'Roboto', 'Arial', sans-serif;   
+    color: #000000;   
 }
 .clearfix::after {
     content: "";
@@ -32,7 +28,7 @@ h2 {
     background: #eeeeee;
     padding-top: 27px;
     padding-bottom: 18px;
-    color: black;
+    color: #000000;
 }
 .container {
     width: 880px;
@@ -67,7 +63,7 @@ h2 {
 }
 .main-navigation a {
     display: block;
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 .main-navigation a:hover {
@@ -92,10 +88,8 @@ h2 {
     font-size: 14px;
     line-height: 30px;
     vertical-align: top;
-    color: black;
+    color: #000000;
     text-decoration: none;
-    font-weight: 500;
-    font-family: 'Roboto', 'Arial', sans-serif; 
     text-transform: uppercase;
 }
 .user-block-basket:hover {
@@ -112,6 +106,7 @@ h2 {
     height: 15px;
     background: url("../img/sprite.png") no-repeat -110px 0px;
     display: inline-block;
+    vertical-align: middle;
     left: -27px;
     top: 5px;
 }   
@@ -177,16 +172,16 @@ b {
 .slide-text {
     width: 500px;
     padding: 30px 0;
+    max-height: 260px;
+    overflow: hidden;
 }
 .slide-title {
-    font-weight: 500;
     font-size: 36px;
     line-height: 33px;
     padding-bottom: 3px;
     letter-spacing: 1px;
 }
 .slide p {
-    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     color: #283136;
@@ -277,7 +272,6 @@ b {
 }
 .production-title {
     text-transform: uppercase;
-    letter-spacing: -1px;
 }
 .production-text {
     font-size: 15px;
@@ -287,14 +281,12 @@ b {
 }
 .order-btn-1:link, .order-btn-1:visited {
     float: left;
-    color: white;
+    color: #ffffff;
     background-color: #fb565a;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px;  
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -316,14 +308,12 @@ b {
 }
 .order-btn-2:link, .order-btn-2:visited {
     float: left;
-    color: white;
+    color: #ffffff;
     background-color: #00ca74;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -345,14 +335,12 @@ b {
 }
 .order-btn-3:link, .order-btn-3:visited {
     float: left;
-    color: white;
+    color: #ffffff;
     background-color: #efc84a;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -393,11 +381,8 @@ b {
     float: left;
     font-size: 36px;
     line-height: 35px;
-    font-weight: 500;
-    font-family: 'Roboto', 'Arial', sans-serif;
     margin-top: 10px;
-    margin-bottom: 18px; 
-    letter-spacing: 0.6px;
+    margin-bottom: 18px;
 }
 .block-description-text {
     font-size: 16px;
@@ -411,7 +396,7 @@ b {
     min-height: 172px;
     margin-left: 40px;
 }
-.block-logo-img {
+.block-logo img {
     margin-left: 30px;
 }
 .block-logo-year {
@@ -421,6 +406,7 @@ b {
     position: relative;
     z-index: 2;
     display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
     background: white;
 }
@@ -469,14 +455,15 @@ b {
     margin-bottom: 22px;
 }
 .services-list > li::before {
-  content: "";
+    content: "";
     width: 25px;
     height: 2px;
     background: #fb565a;
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     left: -11px;
-    top: -5px;
+    top: -2px;
 }
 .company-logo {
     float: left;
@@ -501,10 +488,6 @@ b {
     line-height: 90px;
     vertical-align: top;
 }
-.company-logo-item:last-child {
-    margin-right: 0px;
-    margin-left: 51px;
-}
 .company-logo-item:hover {
     opacity: 1;
     cursor: pointer;
@@ -525,6 +508,7 @@ b {
     padding-bottom: 26px;
     padding-left: 23px;
     padding-right: 23px;
+    text-align: left;
     width: 204px;
     top: 88px;
     background: white;
@@ -532,30 +516,31 @@ b {
     font-size: 16px;
 }
 .contacts-company {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     text-transform: uppercase;
-    color: black;
+    color: #000000;
     line-height: 30px;
     padding-bottom: 11px;
 }
 .contacts-address {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     padding-bottom: 16px;
 }
 .contacts-phone {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     padding-bottom: 28px;
 }
 .contacts-link:link, .contacts-link:visited {
     float: left;
-    color: white;
+    color: #ffffff;
     background-color: #fb565a;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -610,13 +595,13 @@ b {
     cursor: pointer;
 }
 .social-btn-vk {
-    background: url('../img/sprite.png') #e1e1e1 no-repeat 0px -74px;
+    background: #e1e1e1 url("../img/sprite.png") no-repeat 0px -74px;
 }
 .social-btn-fb {
-        background: url('../img/sprite.png') #e1e1e1 no-repeat -62px -76px;
+        background: #e1e1e1 url("../img/sprite.png") no-repeat -62px -76px;
 }
 .social-btn-inst { 
-        background: url('../img/sprite.png') #e1e1e1 no-repeat -124px -76px;
+        background: #e1e1e1 url("../img/sprite.png") no-repeat -124px -76px;
     
 }
 .footer-description {
@@ -626,10 +611,12 @@ b {
 }
 .footer-title {
     display: inline-block;
+    vertical-align: middle;
     margin: 0px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 36px;
+    letter-spacing: 0.2px;
     
 }
 .footer-text {
@@ -639,7 +626,6 @@ b {
     font-weight: 700;
 }
 .title-wrapper {
-    float: left;
     width: 100%;
     margin-bottom: 78px;
     padding-bottom: 84px;
@@ -647,7 +633,6 @@ b {
 }
 .title {
     text-align: center;
-    width: 700px;
     margin: 0 auto;
     padding-top: 44px;
     text-transform: uppercase;
@@ -667,11 +652,15 @@ b {
 .examples-name {
     font-size: 18px;
     text-transform: uppercase;
+    max-height: 24px;
+    overflow: hidden;
 }
 .examples-text {
     font-size: 14px;
     line-height: 18px;
     width: 160px;
+    max-height: 57px;
+    overflow: hidden;
 }
 .examples-item {
     float: left;
@@ -699,6 +688,7 @@ b {
 .examples-item::before {
     content: "";
 	display: inline-block;
+    vertical-align: middle;
 	width: 44px;
 	height: 10px;
 	position: absolute;
@@ -753,13 +743,13 @@ b {
 .price-controls label {
     font-size: 16px;
     display: inline-block;
+    vertical-align: middle;
     width: 50%;
 }
 .max-price {
     text-align: right;
 }
 .price-controls input {
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     width: 60px;
     margin-left: 6px;
@@ -789,6 +779,7 @@ fieldset {
 .filter-item-name, 
 .filter-item-name-checkbox {
     display: inline-block;
+    vertical-align: middle;
     width: 200px;
     margin-bottom: 18px;
     position: relative;
@@ -802,6 +793,7 @@ input[type=checkbox] {
 .filter-item-name::before {
 	content: "";
 	display: inline-block;
+    vertical-align: middle;
 	width: 25px;
 	height: 25px;
 	position: absolute;
@@ -815,7 +807,7 @@ input[type=radio]:checked + .filter-item-name::before {
 
 input[type=radio]:hover:checked + .filter-item-name:hover::before {
  	background: url("../img/sprite.png") no-repeat -25px -25px;
-    color: black;
+    color: #000000;
     width: 25px;
 	height: 25px;
     cursor: pointer;
@@ -827,11 +819,12 @@ input[type=radio]:hover:checked + .filter-item-name:hover::before {
     cursor: pointer;
 }
 .filter-item-name:hover {
-   color: black;
+   color: #000000;
 }
 .filter-item-name-checkbox::before {
 	content: "";
 	display: inline-block;
+    vertical-align: middle;
 	width: 27px;
 	height: 23px;
 	position: absolute;
@@ -850,11 +843,11 @@ input[type=checkbox]:checked + .filter-item-name-checkbox::before {
     cursor: pointer;
 }
 .filter-item-name-checkbox:hover {
-   color: black;
+   color: #000000;
 }
 input[type=checkbox]:hover:checked + .filter-item-name-checkbox:hover::before {
  	background: url("../img/sprite.png") no-repeat -77px -23px;
-    color: black;
+    color: #000000;
     width: 27px;
 	height: 23px;
     cursor: pointer;
@@ -867,14 +860,12 @@ fieldset:last-child {
 }
 .show-more-btn {
     float: left;
-    color: black;
+    color: #000000;
     background-color: #f1f1f1;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -902,12 +893,12 @@ fieldset:last-child {
 }
 .sort-item {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 41px;
     text-transform: uppercase;
 }
 .sort-item-link {
     float: left;
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #b2b2b2;
@@ -915,12 +906,12 @@ fieldset:last-child {
     text-decoration: none;
 }
 .sort-item-link:hover {
-    color: black;
+    color: #000000;
     cursor: pointer;
     border-bottom: 1px solid #00ca74;
 }
 .sort-item-link:active {
-    color: black;
+    color: #000000;
     cursor: pointer;
     border-bottom: 1px solid white;
 }
@@ -931,18 +922,17 @@ fieldset:last-child {
     float: left;
     width: 90px;
     margin-right: 37px;
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 12px;
     line-height: 18px;
-    color: black;
+    color: #000000;
     text-transform: uppercase;
     padding-left: 0px;
 }
 .sort-list {
-    margin-top: 0px;
+    margin-top: -4px;
     width: 350px;
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     padding: 0px;
     float: left;
 }
@@ -953,46 +943,53 @@ fieldset:last-child {
 }
 .sort-button-down {
     float: left;
-    width: 11px;
-    height: 10px;
-    margin-right: 6px;
-    background: url("../img/sprite.png") no-repeat -130px 0px;
+    width: 0;
+    height: 0;
+    margin-right: 4px;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #c1c1c1 transparent transparent transparent;
 }
 .sort-button-up {
     float: left;
-    width: 11px;
-    height: 10px;
-    background: url("../img/sprite.png") no-repeat -150px 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 10px 6px;
+    border-color: transparent transparent #c1c1c1 transparent;
 }
 .sort-button-down:hover {
-    background: url("../img/sprite.png") no-repeat -130px -10px;
+    border-color: #b5b5b5 transparent transparent transparent;
     cursor: pointer;
 }
 .sort-button-up:hover {
-    background: url("../img/sprite.png") no-repeat -150px -10px;
+    border-color: transparent transparent #b5b5b5 transparent;
     cursor: pointer;
 }
 .sort-button-down:active {
-    background: url("../img/sprite.png") no-repeat -130px -20px;
+    border-color: #000000 transparent transparent transparent;
     cursor: pointer;
 }
 .sort-button-up:active {
-    background: url("../img/sprite.png") no-repeat -150px -20px;
+    border-color: transparent transparent #000000 transparent;
     cursor: pointer;
 }
 .sort-button-down-active {
     float: left;
-    width: 11px;
-    height: 10px;
-    margin-right: 6px;
-    background: url("../img/sprite.png") no-repeat -130px -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #00ca72 transparent transparent transparent;
+    margin-right: 4px;
 }
 .sort-button-up-active {
     float: left;
-    width: 11px;
-    height: 10px;
-    margin-right: 6px;
-    background: url("../img/sprite.png") no-repeat -150px -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 10px 6px;
+    border-color: transparent transparent #00ca72 transparent;
 }
 .examples-open {
     position: absolute;
@@ -1005,6 +1002,7 @@ fieldset:last-child {
     padding-bottom: 30px;
     width: 160px;
     height: 135px;
+    overflow: hidden;
     background: white;
     text-align: center;
     display: none;
@@ -1013,15 +1011,13 @@ fieldset:last-child {
     display: block;
 }
 .examples-price:link, .examples-price:visited {
-    float: left;
-    color: white;
+    display: block;
+    color: #ffffff;
     background-color: #fb565a;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 18px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px;  
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -1029,8 +1025,10 @@ fieldset:last-child {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-left: -70px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
 }
 .examples-price:hover {
     background-color: #d6494d;
@@ -1050,14 +1048,12 @@ fieldset:last-child {
 }
 .page-btn-active {
     float: left;
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
     border: 2px solid #f1f1f1;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -1088,14 +1084,12 @@ fieldset:last-child {
 }
 .page-btn:link, .page-btn:visited  {
     float: left;
-    color: black;
+    color: #000000;
     background-color: #f1f1f1;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -1118,14 +1112,12 @@ fieldset:last-child {
 }
 .page-btn-next:link, .page-btn-next:visited {
     float: left;
-    color: black;
+    color: #000000;
     background-color: #f1f1f1;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -1163,6 +1155,10 @@ fieldset:last-child {
         -moz-box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
             box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
 }
+.modal-content-show {
+    display: block;
+    animation: bounce 1.5s;
+}
 .modal-content-input-left {
     float:left;
     width: 220px;
@@ -1196,28 +1192,10 @@ fieldset:last-child {
     border: 2px solid #56bffb;
     outline: none;
 }
-::-webkit-input-placeholder {
-    text-transform: uppercase;
-    color: #000000;
-    opacity: 1;
-    font-size: 12px;
-    line-height: 18px;
-}
-::-moz-placeholder { 
-    text-transform: uppercase;
-    color: #000000;
-    opacity: 1;
-    font-size: 12px;
-    line-height: 18px;
-}
-:-ms-input-placeholder { 
-    text-transform: uppercase;
-    color: #000000;
-    opacity: 1;
-    font-size: 12px;
-    line-height: 18px;
-}
-:-moz-placeholder { 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
     text-transform: uppercase;
     color: #000000;
     opacity: 1;
@@ -1296,17 +1274,16 @@ fieldset:last-child {
 }
 .login-form input {
     display: inline-block;
+    vertical-align: middle;
 }
 .send-button {
     float: left;
-    color: white;
+    color: #ffffff;
     background-color: #fb565a;
     border: none;
     outline: none;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
-    font-family: 'Roboto', 'Arial', sans-serif;  
+    line-height: 18px; 
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
@@ -1331,10 +1308,10 @@ fieldset:last-child {
     transform: translateY(2000px);
   }
   70%  {
-    transform: translateY(-30px);
+    transform: translateY(-70px);
   }
   90%  {
-    transform: translateY(10px);
+    transform: translateY(30px);
   }
   100% {
     transform: translateY(0);

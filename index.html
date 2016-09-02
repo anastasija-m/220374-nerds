@@ -3,16 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Home: Nerds</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic-ext" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic-ext" rel="stylesheet">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
     <body>
         <header class="main-header">
             <div class="container clearfix">
                 <div class="index-logo">
-                    <img class="index-logo-img" src="img/logo.png" width="138" height="55" alt="Nerds">
+                    <img src="img/logo.png" width="138" height="55" alt="Nerds">
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-navigation-menu">
@@ -35,6 +34,9 @@
                 </div>
             </div>
         </header>
+        
+        <!--end header-->
+        
         <main>
             <div class="slider">
                 <input type="radio" id="btn-1" name="toggle" checked>
@@ -69,27 +71,33 @@
                     </div>
                 </div>
             </div>
+            
+            <!--end slider-->
+            
             <div class="container">
                 <div class="production clearfix">
                     <div class="production-item">
-                        <img class="production-img" src="img/category-1.png" width="240" height="124" alt="">
+                        <img src="img/category-1.png" width="240" height="124" alt="">
                         <h2 class="production-title">Веб-сайты</h2>
                         <p class="production-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                         <a href="#" class="order-btn-1">Заказать</a>
                     </div>
                     <div class="production-item">
-                        <img class="production-img" src="img/category-2.png" width="240" height="124" alt="">
+                        <img src="img/category-2.png" width="240" height="124" alt="">
                         <h2 class="production-title">Приложения</h2>
                         <p class="production-text">Покорите топ-10 приложений в AppStrore и Play!</p>
                         <a href="#" class="order-btn-2">Заказать</a>
                     </div>
                     <div class="production-item">
-                        <img class="production-img" src="img/category-3.png" width="240" height="124" alt="">
+                        <img src="img/category-3.png" width="240" height="124" alt="">
                         <h2 class="production-title">Презентации</h2>
                         <p class="production-text">Вы даже не подозреваете, насколько вы изумительны!</p>
                         <a href="#" class="order-btn-3">Заказать</a>
                     </div>
                 </div>
+                
+                <!--end production-->
+                
                 <div class="about-block clearfix">
                     <div class="about-block-desc">
                         <div class="block-description">
@@ -97,7 +105,7 @@
                             <p class="block-description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
                         </div>
                         <div class="block-logo">
-                            <img class="block-logo-img" src="img/logo.png" width="185" height="73" alt="Nerds">
+                            <img src="img/logo.png" width="185" height="73" alt="Nerds">
                             <div class="block-logo-year">SINCE 2004</div>
                         </div>
                     </div>
@@ -120,6 +128,9 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--end about-block-->
+                
                 <div class="company-logo">
                     <div class="company-logo-list">
                         <div class="company-logo-item">
@@ -133,40 +144,58 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--end company-logo-->
+                
             </div>
         </main>
+        
+        <!--end main-->
+        
         <div class="map-wrapper">
             <div class="map">
               <script type="text/javascript" charset="utf-8" async style="width: 100%;" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yyxYwGK3rEDN86XBcotZW6GDu_dxjLBE&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
             </div>
+            
+            <!--end map-->
+
             <div class="container">
                 <div class="contacts">
                     <span class="contacts-company">NЁRDS design studio</span>
                     <span class="contacts-address">191186, Санкт-Петербург,<br>
                                                    ул. Б. Конюшенная, д. 19/8</span>
                     <span class="contacts-phone">тел. +7 (812) 275-75-75</span>
-                    <a data-popup-open="popup-1" href="#" class="contacts-link">Напишите нам</a>
+                    <a href="#" class="contacts-link">Напишите нам</a>
                 </div>
+                
+                <!--end contacts-->
+
             </div>
-            <div class="modal-content" data-popup="popup-1">
-                <button class="modal-content-close" type="button" title="Закрыть" data-popup-close="popup-1"></button>
+            <div class="modal-content">
+                <button class="modal-content-close" type="button" title="Закрыть"></button>
                 <form class="login-form" action="#" method="post">
                     <div class="modal-content-input-left">
                         <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
+                        <input name="modal-content-name" type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
                     </div>
                     <div class="modal-content-input-right">
                         <label for="email">Ваш e-mail:</label>
-                        <input type="text" id="email" placeholder="Для отправки ответа">
+                        <input type="text" id="email" placeholder="Для отправки ответа" required>
                     </div>
                     <div class="modal-content-input-big">
                         <label for="message-text">Текст письма:</label>
-                        <textarea  id="message-text" placeholder="В свободной форме"></textarea>
+                        <textarea id="message-text" placeholder="В свободной форме" required></textarea>
                     </div>
                     <input class="send-button" type="button" value="ОТПРАВИТЬ">
                 </form>
             </div>
+            
+            <!--end modal-content-->
+
         </div>
+        
+        <!--end map-wrapper-->
+
         <footer class="main-footer">
             <div class="container clearfix">
                 <div class="footer-social">
@@ -174,27 +203,21 @@
                     <a href="#" class="social-btn social-btn-fb"></a>
                     <a href="#" class="social-btn social-btn-inst"></a>
                 </div>
+                   
+                <!--end footer-social-->
+
                 <div class="footer-description">
                     <b class="footer-title">Давайте дружить, это выгодно!</b>
                     <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
                 </div>
+                   
+                <!--end footer-description-->
+
             </div>
         </footer>
-        <script>
-             $(function() {
-            //----- OPEN
-            $('[data-popup-open]').on('click', function(e)  {
-                var targeted_popup_class = jQuery(this).attr('data-popup-open');
-                $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-                e.preventDefault();
-            });
-            //----- CLOSE
-            $('[data-popup-close]').on('click', function(e)  {
-                var targeted_popup_class = jQuery(this).attr('data-popup-close');
-                $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-                e.preventDefault();
-            });
-        });
-        </script>
+        
+        <!--end footer-->
+
+        <script src="js/popup.js"></script>
     </body>
 </html>
