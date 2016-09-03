@@ -20,7 +20,6 @@ h2 {
 }
 .clearfix::after {
     content: "";
-
     display: table;
     clear: both;
 }
@@ -115,9 +114,6 @@ h2 {
 }
 .user-block-basket:active::before {
     background: url("../img/sprite.png") no-repeat -110px -30px;
-}
-b { 
-    font-weight: 500;
 }
 .slider {
     background: #eeeeee;
@@ -600,10 +596,10 @@ b {
     background: #e1e1e1 url("../img/sprite.png") no-repeat 0px -74px;
 }
 .social-btn-fb {
-        background: #e1e1e1 url("../img/sprite.png") no-repeat -62px -76px;
+    background: #e1e1e1 url("../img/sprite.png") no-repeat -62px -76px;
 }
 .social-btn-inst { 
-        background: #e1e1e1 url("../img/sprite.png") no-repeat -124px -76px;
+    background: #e1e1e1 url("../img/sprite.png") no-repeat -124px -76px;
     
 }
 .footer-description {
@@ -619,7 +615,7 @@ b {
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 0.2px;
-    
+    font-weight: 500;
 }
 .footer-text {
     margin: 0px;
@@ -1309,15 +1305,23 @@ fieldset:last-child {
 }
 @keyframes bounce {
   0%   {
-    transform: translateY(2000px);
+    -webkit-transform: translateY(2000px);
+        -ms-transform: translateY(2000px);
+            transform: translateY(2000px);
   }
   70%  {
-    transform: translateY(-70px);
+    -webkit-transform: translateY(-70px);
+        -ms-transform: translateY(-70px);
+            transform: translateY(-70px);
   }
   90%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
   }
 }
